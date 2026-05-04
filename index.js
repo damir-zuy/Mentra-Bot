@@ -1,4 +1,11 @@
 const https = require('https')
+const http = require('http')
+
+// Добавь ЭТО в самое начало файла
+const PORT = process.env.PORT || 8080
+http.createServer((req, res) => res.end('ok')).listen(PORT, '0.0.0.0', () => {
+  console.log(`Server listening on 0.0.0.0:${PORT}`)
+})
 
 const TOKEN = process.env.BOT_TOKEN
 const CHAT_ID = process.env.CHAT_ID
