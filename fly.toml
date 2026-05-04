@@ -1,9 +1,6 @@
 app = "mentra-bot"
 primary_region = "waw"
 
-[build]
-  builder = "heroku/buildpacks:20"
-
 [http_service]
   internal_port = 8080
   force_https = true
